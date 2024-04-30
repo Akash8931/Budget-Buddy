@@ -89,7 +89,7 @@ public class Expense extends JFrame {
                 }
 
                 try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/budgetbuddy", "root",
-                        "yourpassword")) {
+                        "TowsonTigers25")) {
                     String sql = "INSERT INTO expense(EXPENSENAME, EXPENSEAMOUNT, EXPENSEDESCRIPTION, EXPENSEDATE) VALUES(?, ?, ?, ?)";
                     PreparedStatement pstmt = conn.prepareStatement(sql);
                     pstmt.setString(1, name);

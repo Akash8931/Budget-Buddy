@@ -33,7 +33,7 @@ public class AppTest {
         // Instantiate the object under test
         app = new App() {
             @Override
-            protected Connection getConnection() throws SQLException {
+            public Connection getConnection() throws SQLException {
                 return mockConnection; // Return the mocked connection here
             }
         };
