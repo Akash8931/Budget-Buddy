@@ -20,6 +20,7 @@ Follow these steps to install and set up the necessary software and components f
 ### Clone the Repository
 ```bash
 git clone https://github.com/Akash8931/SWE-FlexibleDesign.git
+
 cd SWE-FlexibleDesign/budget-buddy-project
 ```
 
