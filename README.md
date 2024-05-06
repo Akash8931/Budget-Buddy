@@ -60,7 +60,7 @@ Incorporate JFreeChart into your project by adding it as a dependency in the Mav
     <version>1.5.3</version> <!-- Replace with the latest version as needed -->
   </dependency>
 ```
-### Clone the Repository
+## Clone the Repository
 To begin setting up the Budget Buddy project on your local machine, follow these steps:
 ```bash
 git clone https://github.com/Akash8931/SWE-FlexibleDesign.git
