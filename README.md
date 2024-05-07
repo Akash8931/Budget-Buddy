@@ -21,13 +21,11 @@ To connect your Java application to a MySQL database, the MySQL Connector/J JDBC
 
 - **Download the Connector/J JAR File**: Go to the [MySQL Connector/J Download Page](https://dev.mysql.com/downloads/connector/j/). On the download page, you will need to select the version of the Connector/J that is compatible with your MySQL server and Java version. This is crucial for ensuring compatibility and functionality.
 - You may be prompted to log in or sign up for an Oracle account. However, you can usually bypass this by clicking on the link that says "No thanks, just start my download."
-- **Add the JAR to your Project**: Once downloaded, add the Connector/J JAR file to your Maven project by including it as a dependency in your `pom.xml` file:
-  ```xml
-  <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>YourVersionHere</version>
-  </dependency>
+- **Add the JAR to your Project**: Once downloaded, save the downloaded JAR file into a `lib` folder in your project directory. Create the `lib` folder if it does not exist.
+Configure your IDE to include the JAR in your build path. For example, in Eclipse:
+     - Right-click on your project in the Project Explorer.
+     - Go to `Properties` -> `Java Build Path`.
+     - On the `Libraries` tab, click `Add JARs...` or `Add External JARs...` and select the Connector/J JAR file from your `lib` folder.
 - **Verify Connection:** Implement a simple test to verify that your application can connect to the MySQL database using the Connector/J. Example test code might look like this:
    ```java
    import java.sql.Connection;
@@ -53,39 +51,12 @@ JFreeChart is a comprehensive open-source library designed for creating a wide a
 #### Adding JFreeChart to Your Project
 Incorporate JFreeChart into your project by adding it as a dependency in the Maven `pom.xml` file. This approach ensures that JFreeChart and its dependencies are correctly managed and updated:
 
-```xml
-  <dependency>
-    <groupId>org.jfree</groupId>
-    <artifactId>jfreechart</artifactId>
-    <version>1.5.3</version> <!-- Replace with the latest version as needed -->
-  </dependency>
-```
+
 ## Clone the Repository
 To begin setting up the Budget Buddy project on your local machine, follow these steps:
 ```bash
 git clone https://github.com/Akash8931/SWE-FlexibleDesign.git
-cd SWE-FlexibleDesign/budget-buddy-project
+cd SWE-FlexibleDesign/src
 ```
 ## Usage
-
-### Install Dependencies
-Navigate to the project directory and install all necessary dependencies using Maven:
-```bash
-mvn clean install
-```
-### Compile the Project
-Before running the application, compile the source code to ensure all Java files are properly compiled and that there are no compilation errors:
-
-```bash
-mvn compile
-```
-### Run the Application
-Launch Budget Buddy using the following Maven command:
-```bash
-mvn exec:java -Dexec.mainClass="com.budgetbuddy.Main"
-```
-### Running Tests
-Ensure the application functions as expected by running the automated tests:
-```bash
-mvn test
-```
+In your IDE, right-click on the `BudgetBuddy.java` file and select "Run" to start the application.
