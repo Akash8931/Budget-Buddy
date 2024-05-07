@@ -62,3 +62,4 @@ cd SWE-FlexibleDesign/src
 ```
 ## Usage
 In your IDE, right-click on the `BudgetBuddy.java` file and select "Run" to start the application.
+Run `table_creation_scripts.txt' to create tables for database
