@@ -48,8 +48,10 @@ Configure your IDE to include the JAR in your build path. For example, in Eclips
 ### JFreeChart Integration
 JFreeChart is a comprehensive open-source library designed for creating a wide array of charts in Java. It is ideal for our Budget Buddy application, enabling dynamic and visually appealing financial reports that enhance user interaction.
 
-#### Adding JFreeChart to Your Project
-Incorporate JFreeChart into your project by adding it as a dependency in the Maven `pom.xml` file. This approach ensures that JFreeChart and its dependencies are correctly managed and updated:
+Configure your IDE to include the JAR in your build path. For example, in Eclipse:
+     - Right-click on your project in the Project Explorer.
+     - Go to `Properties` -> `Java Build Path`.
+     - On the `Libraries` tab, click `Add JARs...` or `Add External JARs...` and select the JFreeChart JAR file from your `lib` folder.
 
 
 ## Clone the Repository
